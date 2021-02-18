@@ -136,41 +136,43 @@ label #sidebar_btn{
  	width: 80px;
 
  }
+.card-box{
+	height: 105px;
+}
+.card-box1 {
+	background-image: linear-gradient(to top right, rgb(244, 244, 247),rgb(5, 46, 226));
+}
+.card-box2 {
+	background-image: linear-gradient(to top right, rgb(56, 56, 173),rgb(149, 163, 224));
+}
+.card-box3 {
+	background-image: linear-gradient(to top right, rgb(10, 10, 250),rgb(39, 173, 57));
+}.card-box4 {
+	background-image: linear-gradient(to top right, rgb(60, 173, 56),rgb(35, 62, 184));
+}.card-box5 {
+	background-image: linear-gradient(to top right, rgb(23, 75, 28),rgb(72, 235, 8));
+}.card-box6 {
+	background-image: linear-gradient(to top right, rgb(110, 47, 228),rgb(50, 59, 99));
+}.card-box7 {
+	background-image: linear-gradient(to top right, rgb(185, 185, 238),rgb(21, 27, 54));
+}.card-box8 {
+	background-image: linear-gradient(to top right, rgb(32, 44, 54),rgb(24, 85, 94));
+}.card-box9 {
+	background-image: linear-gradient(to top right, rgb(6, 55, 61),rgb(149, 163, 224));
+}
+.prin_btn{
+	margin-top: 20px;
 
- .content{
- 	background-color: white;
- 	background-position: center;
- 	background-size: cover;
- 	height: 100vh;
- }
+}
+.btns{
+	width: 200px;
+}
+.button_start{
+	margin-top: 100px;
+	margin-left: 50px;
+}
+.tables {
+	margin-top: 50px;
+}
 
- .small-box{
- 	border-radius: 0.25em;
- 	box-shadow: 0 0 1px;
- 	display:block; 
- 	margin-bottom:20px;
- 	margin-left: 400px;
- 	margin-top: 100px;
- 	width: 250px;
- 	height:13vh; 
- 	background-image: linear-gradient(to bottom right, lightblue,darkblue);
- 	opacity: 0.8;
- 	border-radius: 15px;
-
-
- }
-  .inner{
- 	color: white;
- 	margin-left: 110px;
- 	font-style:normal;
- }
-.small-box-footer {
- 	background: white;
- 	color: black;
- 	display: block;
- 	margin-right:450px;
- 	margin-bottom: 50px;
- 	text-align: center;
- 	margin-top: -40px;
- }
 
