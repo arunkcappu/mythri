@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Side bar dashboard</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+</head>
+<body>
+
+	<input type="checkbox" id="check">
+
+	<!--header area start-->
+	<header>
+		<label for="check">
+			<i class="fas fa-bars" id="sidebar_btn"></i>
+		</label>
+     <nav class="navbar">	
+	<div class="left_area">
+		<h3>Mythri <span>Q</span> </h3>
+	</div>
+	<div class="right_area">
+		<a href="#" class="logout_btn">logout</a>
+	</div>
+     
+     <!--search bar start-->
+     <div>
+     	<div class="search-area">
+     	<i class="fa fa-search" area-hidden="true"></i>
+     	<input type="text" name="value" placeholder="type to search">
+     </div>
+     </div>
+
+	</header>
+	<!--heaser area end-->
+	<!--sidebar start-->
+	<div class="sidebar">
+		<center>
+			<img src="my.jpg.jpg" class="profile_img" alt="">
+			<h4>Ananthu</h4>
+		</center>
+		<a href="#"><i class="fas fa-desktop"></i><span>Dashboard</span></a>
+		<a href="#"><i class="fas fa-cogs"></i><span>Notifications</span></a>
+		<a href="#"><i class="fas fa-table"></i><span>Messeges</span></a>
+		<a href="#"><i class="fas fa-th"></i><span>Fines</span></a>
+		<a href="#"><i class="fas fa-info-circle"></i><span>Reports</span></a>
+		<a href="#"><i class="fas fa-sliders-h"></i><span>Requested items</span></a>
+	</div>
+	<!--sidebar end-->
+
+	<section class="content">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-3 col-6">
+					<!--small box-->
+					<div class="small-box bg-info">
+						<div class="inner">
+					  		<h3>PRINCIPAL</h3>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+           <div class="icon">
+           	<i class="ion ion-bag"></i>
+           </div>
+           <a  href="{% url 'add_hod%}" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+       </div>
+             </div>
+              <div class="col-lg-3 col-6"></div>
+             <!--small box-->
+             <div class="small-box bg-success">
+             	<div class="inner">
+             		<h3>TUTORS</h3>
+             	</div>
+             </div>
+             <div class="icon">
+           	<i class="ion ion-bag"></i>
+           </div>
+           <a  href="{% url 'add_hod%}" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+       </div>
+   </div>
+
+
+	</section>
+	
+</body>
+
+</body>
+</html>
