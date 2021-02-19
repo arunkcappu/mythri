@@ -111,6 +111,8 @@ header{
 
 .sidebar a:hover{
 	background: #C4E7F7;
+	border-radius: 17px;
+
 }
 
 .sidebar i{
