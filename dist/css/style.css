@@ -80,6 +80,19 @@ header{
 	margin-left:50px;
 }
 
+.profile_img{
+	width: 25px;
+	height: 25px;
+	border-radius: 50px;
+	margin-bottom: 10px;
+}
+.image_principal_start{
+	border-radius: 90px;
+	margin-top: 10px;
+	height: 100%;
+	width: 100%;
+}
+
 
 .sidebar a{
 	color: #fff;
@@ -140,25 +153,25 @@ label #sidebar_btn{
 	height: 105px;
 }
 .card-box1 {
-	background-image: linear-gradient(to top right, rgb(244, 244, 247),rgb(5, 46, 226));
+	background-image: linear-gradient(to top right, #EBF5F8,rgb(5, 46, 226));
 }
 .card-box2 {
-	background-image: linear-gradient(to top right, rgb(56, 56, 173),rgb(149, 163, 224));
+	background-image: linear-gradient(to top right, #AD90F1,rgb(149, 163, 224));
 }
 .card-box3 {
-	background-image: linear-gradient(to top right, rgb(10, 10, 250),rgb(39, 173, 57));
+	background-image: linear-gradient(to top right,#252bcc,rgb(39, 173, 57));
 }.card-box4 {
-	background-image: linear-gradient(to top right, rgb(60, 173, 56),rgb(35, 62, 184));
+	background-image: linear-gradient(to top right,#4fccb5,rgb(35, 62, 184));
 }.card-box5 {
-	background-image: linear-gradient(to top right, rgb(23, 75, 28),rgb(72, 235, 8));
+	background-image: linear-gradient(to top right,#09abc0,rgb(72, 235, 8));
 }.card-box6 {
-	background-image: linear-gradient(to top right, rgb(110, 47, 228),rgb(50, 59, 99));
+	background-image: linear-gradient(to top right,#888ade,rgb(50, 59, 99));
 }.card-box7 {
-	background-image: linear-gradient(to top right, rgb(185, 185, 238),rgb(21, 27, 54));
+	background-image: linear-gradient(to top right,#ebf5f8,rgb(21, 27, 54));
 }.card-box8 {
-	background-image: linear-gradient(to top right, rgb(32, 44, 54),rgb(24, 85, 94));
+	background-image: linear-gradient(to top right,#323729(32, 44, 54),rgb(24, 85, 94));
 }.card-box9 {
-	background-image: linear-gradient(to top right, rgb(6, 55, 61),rgb(149, 163, 224));
+	background-image: linear-gradient(to top right, #4fccb5,rgb(149, 163, 224));
 }
 .prin_btn{
 	margin-top: 20px;
