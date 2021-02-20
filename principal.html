@@ -284,7 +284,7 @@
                     <a type="button" class="btn prin_btn btn-danger btns" href="view_perfomance.html">View Performance</a>
                 </div>
                 <div class=" col-md-6">
-                    <a type="button" class="btn prin_btn btn-primary btns">Remove Principal</a>
+                    <a type="button" class="btn prin_btn btn-primary btns confirm-delete">Remove Principal</a>
                 </div>
               </div>
             </div>
@@ -303,7 +303,14 @@
     </div>
   </section>
 </div>
-
+<!-- delete principal -->
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script>
+	$(document).on('click', '.confirm-delete', function(){
+		return confirm('Are you sure you want to delete this?');
+	})
+  </script>
+<!-- end delete principal -->
 
 <!-- jQuery -->
 <script src="plugins/jquery/jquery.min.js"></script>
