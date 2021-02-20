@@ -200,4 +200,21 @@ label #sidebar_btn{
 	margin-bottom: 10px;
 
 }
+.dateDropdown{
+	margin-left: 150px;
+}
+.attendance_p{
+	margin-left: 100px;
+	margin-top: 10px;
+}
+.border-primary{
+	border-color: lawngreen;
+}
+.prformance_h4{
+	text-align: center;
+	color: rgb(0, 81, 255);
+	font-weight: 600;
+}
+
+
 
