@@ -109,11 +109,11 @@ header{
 	margin-left: 50px;
 }
 
-.sidebar a:hover{
+/* .sidebar a:hover{
 	background: #C4E7F7;
 	border-radius: 17px;
 
-}
+} */
 
 .sidebar i{
 	padding-right: 10px;
@@ -186,8 +186,18 @@ label #sidebar_btn{
 	margin-top: 100px;
 	margin-left: 50px;
 }
-.tables {
-	margin-top: 50px;
-}
+/* .tables {
+	margin-top: 40px;
+} */
 
+.table-image {
+	height: 100px;
+	width: 100px;
+	padding-left: 10px;
+	/* float:right; */
+	border-radius: 50px;
+	margin-left: 200px;
+	margin-bottom: 10px;
+
+}
 
