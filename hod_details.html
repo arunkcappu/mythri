@@ -160,6 +160,7 @@
 				</a>
 			  </div>
 			  </li>
+		
 		  </ul>
 		</nav>
 		<!-- /.navbar -->
@@ -251,210 +252,69 @@
 			<!-- /.sidebar -->
 		  </aside>
 
-		  <!-- Content Wrapper. Contains page content -->
+          <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
-    <div class="content-header">
+    <section class="content-header">
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">Dashboard</h1>
-          </div><!-- /.col -->
-        </div><!-- /.row -->
+            <h1>HOD</h1>
+          </div>
+          
+        </div>
       </div><!-- /.container-fluid -->
-    </div>
-    <!-- /.content-header -->
-
+    </section>
     <!-- Main content -->
-    <section class="content">
-      <div class="container-fluid">
-        <!-- Small boxes (Stat box) -->
-        <div class="row">
-          <div class="col-lg-4 col-6">
-            <!-- small box -->
-            <div class="small-box  card-box card-box1" >
-              <div class="inner">
-                <h3></h3>
-
-                <p><b><a href="principal.html">PRINCIPAL</a></b></p>
-              </div>
-              <!-- <div class="icon">
-                <i class="ion ion-bag"></i>
-              </div> -->
-            </div>
-          </div>
-          <!-- ./col -->
-		  <div class="col-lg-4 col-6">
-            <!-- small box -->
-            <div class="small-box bg-success card-box card-box2">
-              <div class="inner">
-				<h3></h3>
-                <p><b><a href="hod.html" >HOD</a></b></p>
+    <div class="content">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="button button_start">
+                <div class=" col-md-6">
+                    <a type="button" class="btn prin_btn btn-warning btns" href="add_hod.html" >Add Principal</a>
+                </div>
+                <div class=" col-md-6">
+                    <a type="button" class="btn prin_btn btn-info btns" href="hod_details.html">View Details</a>
+                </div>
               </div>
             </div>
-          </div>
-          <!-- ./col -->
-		  <div class="col-lg-4 col-6">
-            <!-- small box -->
-            <div class="small-box bg-success card-box card-box3">
-              <div class="inner">
-				<h3></h3>
-                <p><b>OFFICE</b></p>
-              </div>
-            </div>
-          </div>
-          <!-- ./col -->
-		  <div class="col-lg-4 col-6">
-            <!-- small box -->
-            <div class="small-box bg-success card-box card-box4">
-              <div class="inner">
-                <h3></h3>
+            <div class="col-md-6">
+				<div class="w3-bar w3-black">
+                    <!-- <a href="#" class="w3-bar-item w3-button w3-mobile">London</a>
+                     -->
+                    <img src="/mythri/my.jpg.jpg" class="hod_image">
+                    <a href="hod_view_details.html" class="w3-bar-item w3-button w3-mobile" style="margin-left: 10px;">Ananthu Vijayan</a>
+                    <a href="hod_view_details.html" class="w3-bar-item w3-button w3-mobile">-Computer Science</a>
+                </div>
+                <div class="w3-bar w3-black">
+                    <img src="/mythri/dist/img/hod1.png" class="hod_image">
+                    <a href="hod_view_details.html" class="w3-bar-item w3-button w3-mobile" style="margin-left: 10px;">Swarna</a>
+                    <a href="hod_view_details.html" class="w3-bar-item w3-button w3-mobile">-Civil Engineering</a>
+                </div>
+                <div class="w3-bar w3-black">
+                    <img src="/mythri/dist/img/hod2.png" class="hod_image">
+                    <a href="hod_view_details.html" class="w3-bar-item w3-button w3-mobile" style="margin-left: 10px;">Arun Kc</a>
+                    <a href="hod_view_details.html" class="w3-bar-item w3-button w3-mobile">-Mechanical Engineering</a>
+                </div>
+        </div>
+    </div>
 
-                <p><b>TUTORS</b></p>
-              </div>
-            </div>
-          </div>
-          <!-- ./col -->
-		  <div class="col-lg-4 col-6">
-            <!-- small box -->
-            <div class="small-box bg-success card-box card-box5">
-              <div class="inner">
-                <h3></h3>
+          
+        </div>
+    </div>
+  </section>
+</div>
+<!-- delete principal -->
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script>
+	$(document).on('click', '.confirm-delete', function(){
+		return confirm('Are you sure you want to delete this?');
+	})
+  </script>
+<!-- end delete principal -->
 
-                <p><b>LAB ASST</b></p>
-              </div>
-            </div>
-          </div>
-          <!-- ./col --><div class="col-lg-4 col-6">
-            <!-- small box -->
-            <div class="small-box bg-success card-box card-box6">
-				<div class="inner">
-				  <h3></h3>
-  
-				  <p><b>HOSTEL</b></p>
-				</div>
-			  </div>
-			</div>
-			<!-- ./col --><div class="col-lg-4 col-6">
-            <!-- small box -->
-            <div class="small-box bg-success card-box card-box7">
-				<div class="inner">
-				  <h3></h3>
-  
-				  <p><b>LIBRARY</b></p>
-				</div>
-			  </div>
-			</div>
-			<!-- ./col --><div class="col-lg-4 col-6">
-            <!-- small box -->
-            <div class="small-box bg-success card-box card-box8">
-				<div class="inner">
-				  <h3></h3>
-  
-				  <p><b>PARENTS</b></p>
-				</div>
-			  </div>
-			</div>
-			<!-- ./col -->
-			<div class="col-lg-4 col-6">
-				<!-- small box -->
-				<div class="small-box bg-success card-box card-box9">
-				  <div class="inner">
-					<h3></h3>
-	
-					<p><b>STUDENTS</b></p>
-				  </div>
-				</div>
-			  </div>
-			  <!-- ./col -->
-		</div>
-	  </div>
-	</section>
-  </div>
-
-
-
-
-
-	<!-- <input type="checkbox" id="check"> -->
-
-	<!--header area start-->
-	<!-- <header>
-		<label for="check">
-			<i class="fas fa-bars" id="sidebar_btn"></i>
-		</label>
-     <nav class="navbar">	
-	<div class="left_area">
-		<h3>Mythri <span>Q</span> </h3>
-	</div>
-	<div class="right_area">
-		<a href="#" class="logout_btn">logout</a>
-	</div> -->
-     
-     <!--search bar start-->
-     <!-- <div>
-     	<div class="search-area">
-     	<i class="fa fa-search" area-hidden="true"></i>
-     	<input type="text" name="value" placeholder="type to search">
-     </div>
-     </div>
-
-	</header> -->
-	<!--heaser area end-->
-	<!--sidebar start-->
-	<!-- <div class="sidebar">
-		<center>
-			<img src="my.jpg.jpg" class="profile_img" alt="">
-			<h4>Ananthu</h4>
-		</center>
-		<a href="#"><i class="fas fa-desktop"></i><span>Dashboard</span></a>
-		<a href="#"><i class="fas fa-cogs"></i><span>Notifications</span></a>
-		<a href="#"><i class="fas fa-table"></i><span>Messeges</span></a>
-		<a href="#"><i class="fas fa-th"></i><span>Fines</span></a>
-		<a href="#"><i class="fas fa-info-circle"></i><span>Reports</span></a>
-		<a href="#"><i class="fas fa-sliders-h"></i><span>Requested items</span></a>
-	</div> -->
-	<!--sidebar end-->
-
-	<!-- <section class="content">
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-lg-3 col-6"> -->
-					<!--small box-->
-					<!-- <div class="small-box bg-info">
-						<div class="inner">
-					  		<h3>PRINCIPAL</h3>
-
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-           <div class="icon">
-           	<i class="ion ion-bag"></i>
-           </div>
-           <a  href="{% url 'add_hod%}" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
-       </div> -->
-             <!-- </div>
-              <div class="col-lg-3 col-6"></div> -->
-             <!--small box-->
-             <!-- <div class="small-box bg-success">
-             	<div class="inner">
-             		<h3>TUTORS</h3>
-             	</div>
-             </div>
-             <div class="icon">
-           	<i class="ion ion-bag"></i>
-           </div>
-           <a  href="{% url 'add_hod%}" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
-       </div>
-   </div>
-
-
-	</section>
-	 -->
-
-	 <!-- jQuery -->
+<!-- jQuery -->
 <script src="plugins/jquery/jquery.min.js"></script>
 <!-- jQuery UI 1.11.4 -->
 <script src="plugins/jquery-ui/jquery-ui.min.js"></script>
