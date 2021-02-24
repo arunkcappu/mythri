@@ -289,21 +289,36 @@
               </div>
             </div>
             <div class="col-md-6">
-				<div class="card">
-					<div class="card-body">
-						<ul class="list-unstyled">
-							<h4 class="prformance_h4">PERFORMANCE</h4>
-								<ul>
-									<li style="margin-top: 30px;">No of Students</li>
-									<li>Pass Percentage</li>
-									<li>Fail Percentage</li>
-									<li>Attendance of Principal</li>
-
-								</ul>
-						</ul>
-						<div id='myChart'></div>
-					</div>
-				</div>
+				
+                <div class="card-primary tables" style="margin-top: 60px;">
+                    <table class="table table-striped">
+                        <tbody class="thead-white"><tr>
+    
+                          <th style="width:25%">Name:</th>
+                          <td>Ananthu Vijayan</td>
+                        </tr>
+                        <tr>
+                          <th>D.o.b:</th>
+                          <td>10/04/1999</td>
+                        </tr>
+                        <tr>
+                          <th>Join Date:</th>
+                          <td>22/02/2021</a>
+                        </td>
+                        </tr>
+                        <tr>
+                          <th>College:</th>
+                          <td>Rvs India</td>
+                        </tr>
+                        <tr>
+                          <th>Phone:</th>
+                          <td>+91 7736******</td>
+                        </tr>
+                        
+                        
+                      </tbody></table>
+                    </div>
+                    <a type="button" class="btn prin_btn btn-primary btns confirm-deleted">Remove Principal</a>
         	</div>
     	</div>
 
@@ -314,158 +329,6 @@
 </div>
 
 
-
-
-<!-- pie chart -->
-<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/374756/zingchart-2.2.2.min.js"></script>
-<script src= "https://s3-us-west-2.amazonaws.com/s.cdpn.io/374756/zingchart-angularjs-1.0.4.js"></script>
-<script>
-	var myConfig = {
-  layout: "1x3",
-//   theme: 'dark',
-  "graphset": [{
-      type: "pie",
-      scale: {
-        sizeFactor: "60%"
-      },
-      plot: {
-        slice: "75%",
-        valueBox: {
-          visible: false,
-          rules: [{
-            rule: '%p === 0',
-            visible: true,
-            placement: 'center',
-            fontSize: 20,
-            text: '<span style="color:%color">%v%</span>'
-          }]
-        },
-      },
-      "scale-r": {
-        "ref-angle": 270
-      },
-      series: [{
-          values: [23],
-          backgroundColor: "#F44336",
-          rules: [{
-              rule: "%v < 25",
-              backgroundColor: "#F44336" // Red
-            },
-            {
-              rule: "%v > 25 && < %v 75",
-              backgroundColor: "#FFEB3B" // Yellow
-            },
-            {
-              rule: "%v > 75",
-              backgroundColor: "#4CAF50" // Green
-            }
-          ]
-        },
-        {
-          values: [77],
-          backgroundColor: "#BDBDBD" // Grey
-        }
-      ]
-    },
-    {
-      type: "pie",
-      plot: {
-        slice: "75%",
-        valueBox: {
-          visible: false,
-          rules: [{
-            rule: '%p === 0',
-            visible: true,
-            placement: 'center',
-            fontSize: 24,
-            text: '<span style="color:%color">%v%</span>'
-          }]
-        }
-      },
-      "scale-r": {
-        "ref-angle": 270
-      },
-      scale: {
-        sizeFactor: "60%"
-      },
-      series: [{
-          values: [45],
-          backgroundColor: "#FFEB3B",
-          rules: [{
-              rule: "%v < 25",
-              backgroundColor: "#F44336" // Red
-            },
-            {
-              rule: "%v > 25 && < %v 75",
-              backgroundColor: "#FFEB3B" // Yellow
-            },
-            {
-              rule: "%v > 75",
-              backgroundColor: "#4CAF50" // Green
-            }
-          ]
-        },
-        {
-          values: [55],
-          backgroundColor: "#BDBDBD" // Grey
-        }
-      ]
-    },
-    {
-      type: "pie",
-      plot: {
-        slice: "75%",
-        valueBox: {
-          visible: false,
-          rules: [{
-            rule: '%p === 0',
-            visible: true,
-            placement: 'center',
-            fontSize: 24,
-            text: '<span style="color:%color">%v%</span>'
-          }]
-        }
-      },
-      scale: {
-        sizeFactor: "60%"
-      },
-      "scale-r": {
-        "ref-angle": 270
-      },
-      series: [{
-          values: [85],
-          backgroundColor: "#4CAF50",
-          rules: [{
-              rule: "%v < 25",
-              backgroundColor: "#F44336" // Red
-            },
-            {
-              rule: "%v > 25 && < %v 75",
-              backgroundColor: "#FFEB3B" // Yellow
-            },
-            {
-              rule: "%v > 75",
-              backgroundColor: "#4CAF50" // Green
-            }
-          ]
-        },
-        {
-          values: [15],
-          backgroundColor: "#BDBDBD" // Grey
-        }
-      ]
-    }
-  ]
-};
- 
-zingchart.render({
-  id: 'myChart',
-  data: myConfig,
-  height: 400,
-  width: '100%'
-});
-</script>
-<!-- pie chart end -->
 
 <!-- jQuery -->
 <script src="plugins/jquery/jquery.min.js"></script>

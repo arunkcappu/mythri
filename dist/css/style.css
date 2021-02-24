@@ -231,4 +231,10 @@ label #sidebar_btn{
 	background-color: white;
 	margin-top: 10px;
 }
+.confirm-deleted{
+	width: 30%;
+	/* border-radius: 10px; */
+	float: right;
+
+}
 

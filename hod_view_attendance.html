@@ -259,7 +259,7 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>Principal</h1>
+            <h1>HOD</h1>
           </div>
           
         </div>
@@ -272,200 +272,175 @@
             <div class="col-lg-6">
               <div class="button button_start">
                 <div class=" col-md-6">
-                    <a type="button" class="btn prin_btn btn-warning btns" href="add_principal.html">Add Principal</a>
+                    <a type="button" class="btn prin_btn btn-warning btns" href="add_hod.html" >Add Principal</a>
                 </div>
                 <div class=" col-md-6">
-                    <a type="button" class="btn prin_btn btn-info btns" href="principal_details.html">View Details</a>
+                    <a type="button" class="btn prin_btn btn-info btns" href="hod_details.html">View Details</a>
+                </div><div class=" col-md-6">
+                    <a type="button" class="btn prin_btn btn-success btns" href="hod_view_attendance.html">View Attendance</a>
                 </div>
-                <div class=" col-md-6">
-                    <a type="button" class="btn prin_btn btn-success btns" href="view_attendance.html">View Attendance</a>
+				<div class=" col-md-6">
+                    <a type="button" class="btn prin_btn btn-danger btns" href="hod_view_performance.html">View Performance</a>
                 </div>
-                <div class=" col-md-6">
-                    <a type="button" class="btn prin_btn btn-danger btns" href="view_perfomance.html">View Performance</a>
+				<div class=" col-md-6">
+                    <a type="button" href="remove_hod.html" class="btn prin_btn btn-primary btns confirm-delete">Remove H.O.D</a>
                 </div>
-                <div class=" col-md-6">
-                    <a type="button" class="btn prin_btn btn-primary btns " href="remove_principal.html">Remove Principal</a>
-                </div>
+
               </div>
             </div>
             <div class="col-md-6">
-				<div class="card">
-					<div class="card-body">
-						<ul class="list-unstyled">
-							<h4 class="prformance_h4">PERFORMANCE</h4>
-								<ul>
-									<li style="margin-top: 30px;">No of Students</li>
-									<li>Pass Percentage</li>
-									<li>Fail Percentage</li>
-									<li>Attendance of Principal</li>
 
-								</ul>
-						</ul>
-						<div id='myChart'></div>
+                <!-- general form elements -->
+                <div class="card border-primary">
+					<p class="attendance_p" >Select Day Month Or Year to see attendance</p>
+					<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+					<div class="dateDropdown">
+						<label for="dateField1">Please enter the date:</label>
+						<input id="dateField1" type="text" placeholder="dd.mm.yyyy"/>
 					</div>
-				</div>
-        	</div>
-    	</div>
+					<!-- /.card-header -->
+					<div class="card-body">
+					  <table class="table table-bordered">
+						<thead>
+						  <tr>
+							<th >DATE</th>
+							<th>LOGIN</th>
+							<th>LOGOUT</th>
+							<th >STATUS</th>
+						  </tr>
+						</thead>
+						<tbody>
+						  <tr>
+							<td>11/12/1999</td>
+							<td>11/12/1999</td>
+							<td>11/12/1999</td>
+							<td>Active</td>
+						  </tr>
+						  
+						</tbody>
+					  </table>
+					</div>
+					<!-- /.card-body -->
+					<div class="card-footer clearfix">
+					  <ul class="pagination pagination-sm m-0 float-right">
+						<li class="page-item"><a class="page-link" href="#">«</a></li>
+						<li class="page-item"><a class="page-link" href="#">1</a></li>
+						<li class="page-item"><a class="page-link" href="#">2</a></li>
+						<li class="page-item"><a class="page-link" href="#">3</a></li>
+						<li class="page-item"><a class="page-link" href="#">»</a></li>
+					  </ul>
+					</div>
+				  </div>
+                <!-- /.card -->
+        </div>
+    </div>
 
           
         </div>
     </div>
   </section>
 </div>
-
-
-
-
-<!-- pie chart -->
-<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/374756/zingchart-2.2.2.min.js"></script>
-<script src= "https://s3-us-west-2.amazonaws.com/s.cdpn.io/374756/zingchart-angularjs-1.0.4.js"></script>
+<!-- date selection -->
 <script>
-	var myConfig = {
-  layout: "1x3",
-//   theme: 'dark',
-  "graphset": [{
-      type: "pie",
-      scale: {
-        sizeFactor: "60%"
-      },
-      plot: {
-        slice: "75%",
-        valueBox: {
-          visible: false,
-          rules: [{
-            rule: '%p === 0',
-            visible: true,
-            placement: 'center',
-            fontSize: 20,
-            text: '<span style="color:%color">%v%</span>'
-          }]
-        },
-      },
-      "scale-r": {
-        "ref-angle": 270
-      },
-      series: [{
-          values: [23],
-          backgroundColor: "#F44336",
-          rules: [{
-              rule: "%v < 25",
-              backgroundColor: "#F44336" // Red
-            },
-            {
-              rule: "%v > 25 && < %v 75",
-              backgroundColor: "#FFEB3B" // Yellow
-            },
-            {
-              rule: "%v > 75",
-              backgroundColor: "#4CAF50" // Green
-            }
-          ]
-        },
-        {
-          values: [77],
-          backgroundColor: "#BDBDBD" // Grey
-        }
-      ]
-    },
-    {
-      type: "pie",
-      plot: {
-        slice: "75%",
-        valueBox: {
-          visible: false,
-          rules: [{
-            rule: '%p === 0',
-            visible: true,
-            placement: 'center',
-            fontSize: 24,
-            text: '<span style="color:%color">%v%</span>'
-          }]
-        }
-      },
-      "scale-r": {
-        "ref-angle": 270
-      },
-      scale: {
-        sizeFactor: "60%"
-      },
-      series: [{
-          values: [45],
-          backgroundColor: "#FFEB3B",
-          rules: [{
-              rule: "%v < 25",
-              backgroundColor: "#F44336" // Red
-            },
-            {
-              rule: "%v > 25 && < %v 75",
-              backgroundColor: "#FFEB3B" // Yellow
-            },
-            {
-              rule: "%v > 75",
-              backgroundColor: "#4CAF50" // Green
-            }
-          ]
-        },
-        {
-          values: [55],
-          backgroundColor: "#BDBDBD" // Grey
-        }
-      ]
-    },
-    {
-      type: "pie",
-      plot: {
-        slice: "75%",
-        valueBox: {
-          visible: false,
-          rules: [{
-            rule: '%p === 0',
-            visible: true,
-            placement: 'center',
-            fontSize: 24,
-            text: '<span style="color:%color">%v%</span>'
-          }]
-        }
-      },
-      scale: {
-        sizeFactor: "60%"
-      },
-      "scale-r": {
-        "ref-angle": 270
-      },
-      series: [{
-          values: [85],
-          backgroundColor: "#4CAF50",
-          rules: [{
-              rule: "%v < 25",
-              backgroundColor: "#F44336" // Red
-            },
-            {
-              rule: "%v > 25 && < %v 75",
-              backgroundColor: "#FFEB3B" // Yellow
-            },
-            {
-              rule: "%v > 75",
-              backgroundColor: "#4CAF50" // Green
-            }
-          ]
-        },
-        {
-          values: [15],
-          backgroundColor: "#BDBDBD" // Grey
-        }
-      ]
-    }
-  ]
-};
- 
-zingchart.render({
-  id: 'myChart',
-  data: myConfig,
-  height: 400,
-  width: '100%'
-});
-</script>
-<!-- pie chart end -->
+	var s,
+		  DateWidget = {
+			settings: {
+			  months: ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sept','Oct','Nov','Dec'],
+			  day: new Date().getUTCDate(),
+			  currMonth: new Date().getUTCMonth(),
+			  currYear: new Date().getUTCFullYear(),
+			  yearOffset: 21,
+			  containers: $(".dateDropdown")
+			},
+	
+			init: function() {
+			  s = this.settings;
+			  DW = this;
+			  s.containers.each(function(){
+				DW.removeFallback(this);
+				DW.createSelects(this);
+				DW.populateSelects(this);
+				DW.initializeSelects(this);
+				DW.bindUIActions();
+			  })
+			},
+	
+			getDaysInMonth: function(month, year) {
+			   return new Date(year, month, 0).getDate();
+			},
+	
+			addDays: function(daySelect, numDays){
+			  $(daySelect).empty();
+	
+			  for(var i = 0; i < numDays; i++){
+				$("<option />")
+				  .text(i + 1)
+				  .val(i + 1)
+				  .appendTo(daySelect);
+			  }
+			},
+	
+			addMonths: function(monthSelect){
+			  for(var i = 0; i < 12; i++){
+				$("<option />")
+				  .text(s.months[i])
+				  .val(s.months[i])
+				  .appendTo(monthSelect);
+			  }
+			},
+	
+			addYears: function(yearSelect){
+			  for(var i = 0; i < s.yearOffset; i++){
+				$("<option />")
+				  .text(i + s.currYear)
+				  .val(i + s.currYear)
+				  .appendTo(yearSelect);
+			  }
+			},
+	
+			removeFallback: function(container) {
+			  $(container).empty();
+			},
+	
+			createSelects: function(container) {
+			  $("<select class='day'>").appendTo(container);
+			  $("<select class='month'>").appendTo(container);
+			  $("<select class='year'>").appendTo(container);
+			},
+	
+			populateSelects: function(container) {
+			  DW.addDays($(container).find('.day'), DW.getDaysInMonth(s.currMonth, s.currYear));
+			  DW.addMonths($(container).find('.month'));
+			  DW.addYears($(container).find('.year'));
+			},
+	
+			initializeSelects: function(container) {
+			  $(container).find('.day').val(s.day);
+			  $(container).find('.currMonth').val(s.month);
+			  $(container).find('.currYear').val(s.year);
+			},
+	
+			bindUIActions: function() {
+			  $(".month").on("change", function(){
+				var daySelect = $(this).prev(), 
+					yearSelect = $(this).next(),
+					month = s.months.indexOf($(this).val()) + 1,
+					days = DW.getDaysInMonth(month, yearSelect.val());
+				DW.addDays(daySelect, days);
+			  });
+	
+			  $(".year").on("change", function(){
+				var daySelect = $(this).prev().prev(), 
+					monthSelect = $(this).prev(),
+					month = s.months.indexOf(monthSelect.val()) + 1,
+					days = DW.getDaysInMonth(month, $(this).val());
+				DW.addDays(daySelect, days);
+			  });
+			}
+		  };
+	
+		  DateWidget.init();
+	</script>
 
 <!-- jQuery -->
 <script src="plugins/jquery/jquery.min.js"></script>

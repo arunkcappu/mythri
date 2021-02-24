@@ -259,7 +259,7 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>Principal</h1>
+            <h1>HOD</h1>
           </div>
           
         </div>
@@ -272,50 +272,72 @@
             <div class="col-lg-6">
               <div class="button button_start">
                 <div class=" col-md-6">
-                    <a type="button" class="btn prin_btn btn-warning btns" href="add_principal.html">Add Principal</a>
+                    <a type="button" class="btn prin_btn btn-warning btns" href="add_hod.html" >Add Principal</a>
                 </div>
                 <div class=" col-md-6">
-                    <a type="button" class="btn prin_btn btn-info btns" href="principal_details.html">View Details</a>
+                    <a type="button" class="btn prin_btn btn-info btns" href="hod_details.html">View Details</a>
+                </div><div class=" col-md-6">
+                    <a type="button" class="btn prin_btn btn-success btns" href="hod_view_attendance.html">View Attendance</a>
                 </div>
-                <div class=" col-md-6">
-                    <a type="button" class="btn prin_btn btn-success btns" href="view_attendance.html">View Attendance</a>
+				<div class=" col-md-6">
+                    <a type="button" class="btn prin_btn btn-danger btns" href="hod_view_performance.html">View Performance</a>
                 </div>
-                <div class=" col-md-6">
-                    <a type="button" class="btn prin_btn btn-danger btns" href="view_perfomance.html">View Performance</a>
+				<div class=" col-md-6">
+                    <a type="button" href="remove_hod.html" class="btn prin_btn btn-primary btns confirm-delete">Remove H.O.D</a>
                 </div>
-                <div class=" col-md-6">
-                    <a type="button" class="btn prin_btn btn-primary btns " href="remove_principal.html">Remove Principal</a>
-                </div>
+
               </div>
             </div>
             <div class="col-md-6">
-				<div class="card">
-					<div class="card-body">
-						<ul class="list-unstyled">
-							<h4 class="prformance_h4">PERFORMANCE</h4>
-								<ul>
-									<li style="margin-top: 30px;">No of Students</li>
-									<li>Pass Percentage</li>
-									<li>Fail Percentage</li>
-									<li>Attendance of Principal</li>
 
-								</ul>
-						</ul>
-						<div id='myChart'></div>
-					</div>
-				</div>
-        	</div>
-    	</div>
+                <!-- general form elements -->
+                <div class="card">
+                <div class="card-body">
+                    <table class="table table-striped">
+                        <tbody class="thead-white"><tr>
+    
+                          <th style="width:40%">Name Of HOD:</th>
+                          <td>Arun Kc</td>
+                        </tr>
+                        <tr>
+                          <th>Dept control:</th>
+                          <td>Ok</td>
+                        </tr>
+                        <tr>
+                            <th>Attendance:</th>
+                            <td>86%</td>
+                          </tr>
+                          <tr>
+                            <th>Total pass percentage:</th>
+                            <td>300/500</td>
+                          </tr>
+                          <tr>
+                            <th>Obedience:</th>
+                            <td>Good</td>
+                          </tr>
+                          <tr>
+                            <th>Performance:</th>
+                            <td>Good</td>
+                          </tr>
+                        
+                      </tbody></table>
+                    <!-- pie chart -->
+                    <div id='myChart'></div>
+                    <!-- end pie chart -->
+                    <!-- monthly chart -->
+                    <div id="chartContainer" style="height: 300px; "></div>
+                    <!-- end monthly chart -->
+                </div>
+            </div>
+                <!-- /.card -->
+        </div>
+    </div>
 
           
         </div>
     </div>
   </section>
 </div>
-
-
-
-
 <!-- pie chart -->
 <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/374756/zingchart-2.2.2.min.js"></script>
 <script src= "https://s3-us-west-2.amazonaws.com/s.cdpn.io/374756/zingchart-angularjs-1.0.4.js"></script>
@@ -388,73 +410,10 @@
       scale: {
         sizeFactor: "60%"
       },
-      series: [{
-          values: [45],
-          backgroundColor: "#FFEB3B",
-          rules: [{
-              rule: "%v < 25",
-              backgroundColor: "#F44336" // Red
-            },
-            {
-              rule: "%v > 25 && < %v 75",
-              backgroundColor: "#FFEB3B" // Yellow
-            },
-            {
-              rule: "%v > 75",
-              backgroundColor: "#4CAF50" // Green
-            }
-          ]
-        },
-        {
-          values: [55],
-          backgroundColor: "#BDBDBD" // Grey
-        }
-      ]
+      
     },
-    {
-      type: "pie",
-      plot: {
-        slice: "75%",
-        valueBox: {
-          visible: false,
-          rules: [{
-            rule: '%p === 0',
-            visible: true,
-            placement: 'center',
-            fontSize: 24,
-            text: '<span style="color:%color">%v%</span>'
-          }]
-        }
-      },
-      scale: {
-        sizeFactor: "60%"
-      },
-      "scale-r": {
-        "ref-angle": 270
-      },
-      series: [{
-          values: [85],
-          backgroundColor: "#4CAF50",
-          rules: [{
-              rule: "%v < 25",
-              backgroundColor: "#F44336" // Red
-            },
-            {
-              rule: "%v > 25 && < %v 75",
-              backgroundColor: "#FFEB3B" // Yellow
-            },
-            {
-              rule: "%v > 75",
-              backgroundColor: "#4CAF50" // Green
-            }
-          ]
-        },
-        {
-          values: [15],
-          backgroundColor: "#BDBDBD" // Grey
-        }
-      ]
-    }
+    
+    
   ]
 };
  
@@ -466,6 +425,40 @@ zingchart.render({
 });
 </script>
 <!-- pie chart end -->
+
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+<script type="text/javascript">
+
+window.onload = function () {
+	var chart = new CanvasJS.Chart("chartContainer", {
+            // title:{
+            // 	text: "My First Chart in CanvasJS"              
+            // },
+		data: [              
+		{
+			// Change type to "doughnut", "line", "splineArea", etc.
+			type: "column",
+			dataPoints: [
+				{ label: "Jan",  y: 10  },
+				{ label: "Feb", y: 15  },
+				{ label: "Mar", y: 25  },
+				{ label: "Apr",  y: 30  },
+				{ label: "May",  y: 60  },
+				{ label: "Jun",  y: 5  },
+				{ label: "Jul",  y: 50  },
+				{ label: "Aug",  y: 32  },
+				{ label: "Sep",  y: 40  },
+				{ label: "Oct",  y: 61  },
+				{ label: "Nov",  y: 40  },
+				{ label: "Dec",  y: 53  }
+
+			]
+		}
+		]
+	});
+	chart.render();
+}
+</script>
 
 <!-- jQuery -->
 <script src="plugins/jquery/jquery.min.js"></script>
