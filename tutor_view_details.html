@@ -61,7 +61,7 @@
 				<a href="#" class="dropdown-item">
 				  <!-- Message Start -->
 				  <div class="media">
-					<img src="dist/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle">
+					<img src="/dist/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle">
 					<div class="media-body">
 					  <h3 class="dropdown-item-title">
 						Brad Diesel
@@ -259,7 +259,7 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>HOD</h1>
+            <h1>TUTORS</h1>
           </div>
           
         </div>
@@ -272,25 +272,24 @@
             <div class="col-lg-6">
               <div class="button button_start">
                 <div class=" col-md-6">
-                    <a type="button" class="btn prin_btn btn-warning btns" href="add_hod.html" >Add Principal</a>
+                    <a type="button" class="btn prin_btn btn-warning btns" href="add_tutor.html">Add Tutor</a>
                 </div>
                 <div class=" col-md-6">
-                    <a type="button" class="btn prin_btn btn-info btns" href="hod_details.html">View Details</a>
+                    <a type="button" class="btn prin_btn btn-info btns" href="tutor_details.html">View Details</a>
+                </div>
+                <div class=" col-md-6">
+                    <a type="button" class="btn prin_btn btn-success btns" href="tutor_view_attendance.html">View Attendance</a>
                 </div>
 				<div class=" col-md-6">
-                    <a type="button" class="btn prin_btn btn-success btns" href="hod_view_attendance.html">View Attendance</a>
+                    <a type="button" class="btn prin_btn btn-danger btns" href="tutor_view_performance.html">View Performance</a>
                 </div>
 				<div class=" col-md-6">
-                    <a type="button" class="btn prin_btn btn-danger btns" href="hod_view_performance.html">View Performance</a>
+                    <a type="button" class="btn prin_btn btn-primary btns confirm-delete" href="remove_tutor.html">Remove Tutor</a>
                 </div>
-				<div class=" col-md-6">
-                    <a type="button" class="btn prin_btn btn-primary btns confirm-delete" href="remove_hod.html">Remove H.O.D</a>
-                </div>
-
               </div>
             </div>
             <div class="col-md-6">
-				<img src="/dist/img/hod2.png" class="table-image">
+                <img src="/dist/img/hod2.png" class="table-image">
 
                 <!-- general form elements -->
                 <div class="card-primary tables">
@@ -327,7 +326,7 @@
                     </tr>
                   </tbody></table>
                 </div>
-                <!-- /.card -->
+                  <!-- /.card -->
         </div>
     </div>
 
@@ -336,7 +335,14 @@
     </div>
   </section>
 </div>
-
+<!-- delete principal -->
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script>
+	$(document).on('click', '.confirm-delete', function(){
+		return confirm('Are you sure you want to delete this?');
+	})
+  </script>
+<!-- end delete principal -->
 
 <!-- jQuery -->
 <script src="plugins/jquery/jquery.min.js"></script>
