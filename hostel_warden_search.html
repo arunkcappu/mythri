@@ -259,7 +259,7 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>HOD</h1>
+            <h1>HOSTEL WARDEN</h1>
           </div>
           
         </div>
@@ -272,20 +272,34 @@
             <div class="col-lg-6">
               <div class="button button_start">
                 <div class=" col-md-6">
-                    <a type="button" class="btn prin_btn btn-warning btns" href="add_lab_asstnt.html">Add H.O.D</a>
+                    <a type="button" class="btn prin_btn btn-warning btns" href="add_hostel_wardens.html">Add Hostel wardens</a>
                 </div>
                 <div class=" col-md-6">
-                    <a type="button" class="btn prin_btn btn-info btns" href="lab_asstnt_details.html">View Details</a>
+                    <a type="button" class="btn prin_btn btn-info btns" href="hostel_warden_details.html">View Details</a>
                 </div>
               </div>
             </div>
             <div class="col-md-6">
-                <!-- general form elements -->
-                <div class="card card-primary image_principal_start">
-                  <!-- /.card-header -->
-                  <img src="/dist/img/principal_first.png" class="">
+                 <!-- general form elements -->
+                 <div class="w3-bar w3-black">
+                    <!-- <a href="#" class="w3-bar-item w3-button w3-mobile">London</a>
+                     -->
+                    <!-- <img src="/mythri/my.jpg.jpg" class="hod_image"> -->
+                    <img src="/my.jpg.jpg" class="hod_image">
+                    <a href="hostel_warden_view_details.html" class="w3-bar-item w3-button w3-mobile" style="margin-left: 10px;">Ananthu Vijayan</a>
+                    <a href="hostel_warden_view_details.html" class="w3-bar-item w3-button w3-mobile">- Hostel 1</a>
                 </div>
-                <!-- /.card -->
+                <div class="w3-bar w3-black">
+                    <img src="/dist/img/hod1.png" class="hod_image">
+                    <a href="hostel_warden_view_details.html" class="w3-bar-item w3-button w3-mobile" style="margin-left: 10px;">Swarna</a>
+                    <a href="hostel_warden_view_details.html" class="w3-bar-item w3-button w3-mobile">- Hostel 2</a>
+                </div>
+                <div class="w3-bar w3-black">
+                    <img src="/dist/img/hod2.png" class="hod_image">
+                    <a href="hostel_warden_view_details.html" class="w3-bar-item w3-button w3-mobile" style="margin-left: 10px;">Arun Kc</a>
+                    <a href="hostel_warden_view_details.html" class="w3-bar-item w3-button w3-mobile">- Hostel 3</a>
+                </div>
+                  <!-- /.card -->
         </div>
     </div>
 
@@ -294,7 +308,14 @@
     </div>
   </section>
 </div>
-
+<!-- delete principal -->
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script>
+	$(document).on('click', '.confirm-delete', function(){
+		return confirm('Are you sure you want to delete this?');
+	})
+  </script>
+<!-- end delete principal -->
 
 <!-- jQuery -->
 <script src="plugins/jquery/jquery.min.js"></script>

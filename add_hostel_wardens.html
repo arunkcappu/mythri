@@ -259,7 +259,7 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>HOD</h1>
+            <h1>HOSTEL WARDEN</h1>
           </div>
           
         </div>
@@ -272,20 +272,70 @@
             <div class="col-lg-6">
               <div class="button button_start">
                 <div class=" col-md-6">
-                    <a type="button" class="btn prin_btn btn-warning btns" href="add_lab_asstnt.html">Add H.O.D</a>
+                    <a type="button" class="btn prin_btn btn-warning btns" href="add_hostel_wardens.html">Add Hostel wardens</a>
                 </div>
                 <div class=" col-md-6">
-                    <a type="button" class="btn prin_btn btn-info btns" href="lab_asstnt_details.html">View Details</a>
+                    <a type="button" class="btn prin_btn btn-info btns" href="hostel_warden_details.html">View Details</a>
                 </div>
               </div>
             </div>
             <div class="col-md-6">
-                <!-- general form elements -->
-                <div class="card card-primary image_principal_start">
-                  <!-- /.card-header -->
-                  <img src="/dist/img/principal_first.png" class="">
-                </div>
-                <!-- /.card -->
+                 <!-- general form elements -->
+                 <div class="card card-primary">
+                    <!-- /.card-header -->
+                    <!-- form start -->
+                    <form>
+                      <div class="card-body">
+                        <div class="form-group">
+                          <label >Name</label>
+                          <input type="text" class="form-control"  placeholder="Enter Name" name="name">
+                        </div>
+                        <div class="form-group">
+                          <label>D.o.b</label>
+                          <input type="date" class="form-control" name="date"  >
+                        </div>
+                        <div class="form-group">
+                          <label>Join Date</label>
+                          <input type="date" class="form-control" name="join-date"  >
+                        </div>
+                        <div class="form-group">
+                          <label>Hostel Name</label>
+                          <input type="text" class="form-control" name="join-date"  >
+                        </div>
+                        <div class="form-group">
+                            <label>Location</label>
+                            <input type="text" class="form-control" name="join-date"  >
+                          </div>
+                        <div class="form-group">
+                          <label>Phone</label>
+                          <input type="number" class="form-control" name="phone" placeholder="Enter the Phone Number" >
+                        </div>
+                        
+                        <div class="form-group">
+                          <label>Email</label>
+                          <input type="email" class="form-control" name="email" placeholder="Enter the Email Addres" >
+                        </div>
+                        <div class="form-group">
+                          <label>Username</label>
+                          <input type="text" class="form-control" name="username" placeholder="Enter the Username" >
+                        </div>
+                          <div class="form-group">
+                              <label>Password</label>
+                              <input type="password" class="form-control" name="password" placeholder="Enter the password" >
+                          </div>
+                          <div class="form-group">
+                            <label>Image</label>
+                            <input type="file" class="form-control" name="image"  >
+                        </div>
+                        
+                      <!-- /.card-body -->
+      
+                      <div class="card-footer">
+                        <button type="submit" class="btn btn-primary">Add</button>
+                      </div>
+                    </form>
+                  </div>
+                  <!-- /.card -->
         </div>
     </div>
 
@@ -294,7 +344,14 @@
     </div>
   </section>
 </div>
-
+<!-- delete principal -->
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script>
+	$(document).on('click', '.confirm-delete', function(){
+		return confirm('Are you sure you want to delete this?');
+	})
+  </script>
+<!-- end delete principal -->
 
 <!-- jQuery -->
 <script src="plugins/jquery/jquery.min.js"></script>
